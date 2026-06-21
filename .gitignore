@@ -6,6 +6,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # IDE files
 .vscode/
@@ -27,13 +28,34 @@ node_modules/
 vendor/
 packages/
 
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
 # Environment variables
 .env
 .env.local
 .env.*.local
 
-# Logs
+# Models & Data (large files)
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+*.h5
+*.onnx
+data/
+datasets/
+
+# Logs & DB
 *.log
+*.db
+*.sqlite3
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
